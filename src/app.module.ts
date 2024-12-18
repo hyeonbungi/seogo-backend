@@ -4,6 +4,7 @@ import { ClassValidatorException } from './_common/exceptions/class-validation-e
 import { ConfigModule } from '@nestjs/config';
 import { PrismaModule } from './prisma/prisma.module';
 import { BooksModule } from './books/books.module';
+import { ReviewsModule } from './reviews/reviews.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { BooksModule } from './books/books.module';
     }),
     PrismaModule,
     BooksModule,
+    ReviewsModule,
   ],
   providers: [
     {
